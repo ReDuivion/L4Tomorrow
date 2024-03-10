@@ -10,6 +10,7 @@ import Mail from "./pages/Mail";
 import Url from "./pages/Url";
 import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
+import FAQ from "./pages/Faq";
 
 const withLayout = (LayoutComponent, ChildComponent) => {
   return (props) => (
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="mail" element={<Mail />} />
       </Route>
       <Route path="*" element={<NotFound />} />
+      <Route path="faq" element={<FAQ/>}/>
     </Routes>
   );
 }
